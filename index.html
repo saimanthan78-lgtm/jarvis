@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesture-Driven 3D Particle Morph Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video id="webcam" autoplay playsinline muted></video>
+    <canvas id="overlay"></canvas>
+
+    <div class="hud">
+      <h1>Gesture Particle Lab</h1>
+      <p>
+        Pinch distance controls expansion · Hand openness controls color spectrum ·
+        Swipe left/right switches templates
+      </p>
+      <p id="status">Initializing camera + hand tracking…</p>
+      <div id="templateInfo">Template: --</div>
+      <div class="legend">
+        <span>Templates: heart, flower, saturn, firework + 15 more</span>
+      </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
